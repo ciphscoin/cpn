@@ -37,6 +37,10 @@ git checkout dev
 
 ./zcutil/fetch-params.sh
 
+rm -r /home/user/.zcash-fetch-params  //needed due to Zcash has moved file locations. Expect to receive 1 error regarding failed checksum.
+
+./zcutil/fetch-params-alt.sh
+
 ./zcutil/build.sh -j2
 
 # Launching CPN
